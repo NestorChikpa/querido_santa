@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Regalos de Navidad</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #93b3d3;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        header {
+            text-align: center;
+            background-color: #d32f2f;
+            color: #ffffff;
+            padding: 20px 0;
+            border-radius: 8px;
+            position: relative;
+            z-index: 10;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin-top: 20px;
+            position: relative;
+            z-index: 10;
+        }
+
+        li {
+            background: #fff;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background-color 0.3s ease;
+        }
+
+        li:hover {
+            background-color: #f5c6c6;
+        }
+
+        .item-name {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .btn {
+            background-color: #4caf50;
+            color: rgb(255, 255, 255);
+            border: none;
+            padding: 10px 15px;
+            text-decoration: none;
+            font-size: 14px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #45a049;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 14px;
+            color: #666;
+            position: relative;
+            z-index: 10;
+        }
+
+        /* Fondo animado */
+        .snowflake {
+            position: fixed;
+            top: -10px;
+            width: 10px;
+            height: 10px;
+            background-color: white;
+            border-radius: 50%;
+            opacity: 0.8;
+            animation: fall linear infinite;
+        }
+
+        @keyframes fall {
+            0% {
+                transform: translateY(-10px);
+                opacity: 0.8;
+            }
+            100% {
+                transform: translateY(110vh);
+                opacity: 0.2;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Lista de Regalos de Navidad 🎄</h1>
+    </header>
+    <main>
+        <ul>
+            <li>
+                <span class="item-name">🎮Control de switch🎮</span>
+                <a href="https://www.amazon.com.mx/PowerA-Wired-Controller-Nintendo-Switch/dp/B07PDJ45BT/ref=cs_sr_dp_6?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3T6QGX39VBO8D&dib=eyJ2IjoiMSJ9.bmkpCr2kGj4pR1WUAGBzrffdZ4mfyURzIv_YMCKRMbQY06sAPoYrzrUFIdAiT1mILyiZI8qhe04SIA_6Q1PFaV78FzuIf-OrmXwKfHBPbDpMG5pVnBdxRuRxlo_2daNvUgcJmSHZz5YoIjmdzJkmjgTDv4MkLRSmXHdhT2ihLb0Z678U6NNqgR60R1DcyAf_SjuawD9fNjNz53rcBnYI3O8SryN0pC93ZJcxNiCmWyztvGcV_ZFysGC64qDu4Pcsh26d05yYvL71-Qk3t6SIDbqCpWYU4H8xjgl-5WATKfU.S1E9Cpv6Yjv1GfD8Civ8GJL80wR3PzlTUXLWSvcU14A&dib_tag=se&keywords=control%2Bde%2Bnintendo%2Bswitch&qid=1732041343&sprefix=control%2Bde%2Bnitendo%2Bswich%2Caps%2C166&sr=8-14&ufe=app_do%3Aamzn1.fos.de93fa6a-174c-4df7-be7c-5bc8e9c5a71b&th=1" target="_blank" class="btn">Ver más</a>
+            </li>
+            <li>
+                <span class="item-name">🕶️lentes de sol🕶️</span>
+                <a href="https://www.amazon.com.mx/KURSAN-John-Lennon-polarizadas-redondas/dp/B09KTKHKZY/ref=cs_sr_dp_2?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1BRMIJCLXEA60&dib=eyJ2IjoiMSJ9.wOz3qL5EU-1NGzqDzOAJBJ0iu6w3BYQGnAh3dx03X56LSyNY842qO31HzFyBMJsyFg0sW8agkqN8W0r2T2UYeyr213LieeSoInCwejJQ-MYkfRlgmeI-_34DbMJi3mDkSZ8OIzZ68BLFlsNxNI64XXl5-piU7AK-XQ1ZWxsHcNv2EL8nGleU8DCwzrHYNGKekpUXr1fH0SGYCViMp7s0ECNutG3q1d_exK9JBNwf3mUfffkUWzwdSs4HXFkuFpmryxhmwHlHOdPs1hCS_UrJJqZLNcE_m-WaCfMfAx9Of-o.BtImYPr_PASByVKMHryYGqA247CkEuK6zfpN5p1eGtQ&dib_tag=se&keywords=lentes%2Bcirculares&qid=1732041544&sprefix=lentes%2Bcirculares%2Caps%2C162&sr=8-7&ufe=app_do%3Aamzn1.fos.de93fa6a-174c-4df7-be7c-5bc8e9c5a71b&th=1" target="_blank" class="btn">Ver más</a>
+            </li>
+            <li>
+                <span class="item-name">⏳Reloj casio⏳</span>
+                <a href="https://www.amazon.com.mx/Casio-MQ24-1E-Black-Resin-Watch/dp/B000GAWSHM/ref=sr_1_3?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2HBNRF40US88T&dib=eyJ2IjoiMSJ9.8pvSDJyDMmhnLWEaVtwB0p0ji3uEKKIIcx_kvUGWTGEsNkVPm9N0GQKN5S_cG8KHh6ftdjaa2oVgpWVWrm3axMjfuRxMtKq3vCFee5o6o8e1gFQaPb-tMWl4Ot-nSPPyFS0_V8DrMj9Co6Ck3Yya1UgC7iuanGPIwD4bDdJLD0_QTC2nMXzRXnp03czmP7DqCBckE2hpZCERfq-Wyyh0Fm55JDC30DDv7CAFV1OVJhyln6hRJo9AjilMMA5N5TjRKmbFALcU6ueuBw3J9zo-H8AxB0-JctUZhZjd8vJYLbw.tAgsh_2KUMq9da7cDZ3DB0jYU-m0o_zPYABMgzhmS-E&dib_tag=se&keywords=reloj+casio&qid=1732042290&sprefix=reloj+casio%2Caps%2C167&sr=8-3&ufe=app_do%3Aamzn1.fos.de93fa6a-174c-4df7-be7c-5bc8e9c5a71b" target="_blank" class="btn">Ver más</a>
+            </li>
+            <li>
+                <span class="item-name">✨Collar✨</span>
+                <a href="https://www.amazon.com.mx/QWONEKOU-Inoxidable-Colgante-Cuadrada-Adolescentes/dp/B0CZ6QL9DM/ref=sr_1_51?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1OSJJ9CNO7SM0&dib=eyJ2IjoiMSJ9.QquXuQHjTxzSY0g8HkyJkFio675TeJ9IXlq8nY1d3WT14Ae5xd3mU80BDpUmo51WtEFrftPlQd1nZAgCqjsj9Owsf6HRPIG4XKP6iEv942gGNw42tif2JJ30Ggq_XEezRHaj4bOouUTPklXvNWxvi2uCx0aQ87t0-cQtQofpTHjJC7mgsz64uYn6fw5AfAbf0KNuAWneYVwiZId_1arnfpnyCnpws5FgXfrPSq1QtWWRumSza4aaxwlAISu7i1ku4Heze_utTxiyo7CgXtQHKYE4HXjhc_eW6jfb3sfcoes.-_Y3HUEF1oE3UWjgIZ-MuNJ5UrVUARkLdXyaH4D66JA&dib_tag=se&keywords=collar%2Bhombre&qid=1732042441&sprefix=collar%2Bhombr%2Caps%2C178&sr=8-51&ufe=app_do%3Aamzn1.fos.de93fa6a-174c-4df7-be7c-5bc8e9c5a71b&th=1" target="_blank" class="btn">Ver más</a>
+            </li>
+        </ul>
+    </main>
+    <!-- Frase animada -->
+    <div class="navideño">
+        <span>P</span><span>a</span><span>r</span><span>a</span>
+        <span> </span>
+        <span>q</span><span>u</span><span>e</span>
+        <span> </span>
+        <span>s</span><span>e</span><span>a</span>
+        <span> </span>
+        <span>m</span><span>á</span><span>s</span>
+        <span> </span>
+        <span>n</span><span>a</span><span>v</span><span>i</span><span>d</span><span>e</span><span>ñ</span><span>o</span>
+        <span> </span>
+        <span>l</span><span>a</span>
+        <span> </span>
+        <span>p</span><span>á</span><span>g</span><span>i</span><span>n</span><span>a</span>
+    </div>
+    
+
+    <!-- Reproductor de música -->
+    <div class="audio-control">
+        <audio controls autoplay loop>
+            <source src="musicanav.mp3" type="audio/mpeg">
+            Tu navegador no soporta el elemento de audio.
+        </audio>
+    </div>
+    <footer>
+        <p>¡Felices fiestas! 🎅✨</p>
+    </footer>
+
+    <!-- Copos de nieve -->
+    <script>
+        function createSnowflakes() {
+            const snowflakeCount = 100;
+
+            for (let i = 0; i < snowflakeCount; i++) {
+                const snowflake = document.createElement('div');
+                snowflake.classList.add('snowflake');
+                snowflake.style.left = Math.random() * 100 + 'vw';
+                snowflake.style.animationDuration = Math.random() * 3 + 2 + 's';
+                snowflake.style.animationDelay = Math.random() * 5 + 's';
+                document.body.appendChild(snowflake);
+            }
+        }
+
+        createSnowflakes();
+    </script>
+</body>
+
+</html>

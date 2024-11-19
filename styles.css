@@ -1,0 +1,121 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    overflow: hidden;
+}
+
+/* Lista de regalos */
+.gift-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.gift-list li {
+    background: #eb1919;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.gift-list li:hover {
+    background-color: #56cbc1;
+}
+
+.btn {
+    background-color: #4caf50;
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
+
+/* Título animado */
+h1 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+/* Frase animada */
+.navideño {
+    font-size: 24px;
+    font-weight: bold;
+    color: #d32f2f;
+    display: inline-block;
+    margin-top: 50px;
+}
+
+.navideño span {
+    display: inline-block;
+    animation: bounce 2s infinite;
+    font-size: 24px;
+}
+
+/* Animación principal */
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+        color: #d32f2f;
+    }
+    25% {
+        transform: translateY(-10px);
+        color: #4caf50; /* Verde momentáneo */
+    }
+    50% {
+        transform: translateY(0);
+        color: #d32f2f;
+    }
+}
+
+/* Sincronización de letras */
+.navideño span:nth-child(n) {
+    animation-delay: calc(var(--i) * 0.1s);
+}
+
+.audio-control {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Fondo animado (copos de nieve) */
+.snowflake {
+    position: fixed;
+    top: -10px;
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+    opacity: 0.8;
+    animation: fall linear infinite;
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(-10px);
+        opacity: 0.8;
+    }
+    100% {
+        transform: translateY(110vh);
+        opacity: 0.2;
+    }
+}
